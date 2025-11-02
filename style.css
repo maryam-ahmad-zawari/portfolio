@@ -415,9 +415,38 @@ body {
   }
 }
 /*Mobile View*/
-/*Choose Section*/
+/*Choose Section---------------------------we are here*/
 @media (max-width: 600px) {
-/*We are here-----------------------------------------------------------------------------*/
+  .section-choose {
+   flex-direction: column;
+  }
+  .choose-left {
+   width: 250%;
+   text-align: center;
+  }
+  .choose-right {
+   width: 250%;
+   text-align: center;
+   margin-top: -90px;
+  }
+  .choose-first {
+   font-size: 37px;
+   text-align: center;
+  }
+  .choose-second {
+   font-size: 74px;
+   line-height: 79px;
+  }
+  .choose-para {
+   font-size: 39px;
+   margin-top: -57px;
+  }
+  .choose-first-third-para, .choose-second-para {
+   width: 990px;
+   height: 240px;
+   font-size: 35px;
+   margin: 10px auto;
+  }
 }
 /* Projects Section */
 .projects {
