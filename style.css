@@ -203,7 +203,7 @@ body {
   width: 70%; /*Remember through this right left side content spread or shrink*/
   margin-top: 90px;
 }
-.services-first {
+.services-first { /*Change for project-first because of top margin on mobile*/
   color: rgb(16, 118, 118);
   font-family: roboto;
   font-size: 20px;
@@ -415,7 +415,7 @@ body {
   }
 }
 /*Mobile View*/
-/*Choose Section---------------------------we are here*/
+/*Choose Section*/
 @media (max-width: 600px) {
   .section-choose {
    flex-direction: column;
@@ -449,6 +449,25 @@ body {
   }
 }
 /* Projects Section */
+  .projects-first { /*Separte reason for top margin on mobile*/
+   color: rgb(16, 118, 118);
+   font-family: roboto;
+   font-size: 20px;
+   font-weight: 700;
+}
+/*Tablet View of projects section first heading*/
+@media (max-width: 1024px) {
+  .projects-first {
+   font-size: 49px;
+  }
+}
+/*Mobile view of project section first heading*/
+@media (max-width: 600px) {
+  .projects-first {
+   font-size: 49px;
+   margin-top: -450px;
+  }
+} 
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -502,7 +521,46 @@ body {
 #project-two-pic { /*Project 2 Pic*/
   background-image: url("Projects/project2.png");
   background-repeat: no-repeat;
+}/*We are here-------------------------------------------------------------------------------------------------------*/
+/*Tablet View*/
+@media (max-width: 1024px) {
+
 }
+/*Mobile View*/
+@media (max-width: 600px) {
+  .projects {
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: center;
+   gap: 35px;
+   margin-top: -500px;
+   margin-left: 500px;
+  }
+  .project-box {
+   width: 890px; /*Your projects images sizes on mobile will 790px by 324px*/
+   height: 324px;
+  }
+  .project-shade-box {
+  margin-top: 210px;
+  margin-left: -30px;
+  width: 650px;
+  height: 145px;
+  /*padding-top: 30px;*/
+  padding: 30px; 
+  }
+  .project-content-box {
+  margin-top: 10px;
+  }
+ .project-box-heading {
+  font-size: 37px;
+  font-weight: 500;
+  }
+ .project-box-para {
+  font-size: 25px; 
+  line-height: 34px;
+  }
+}
+/*We are here--------------------------------------------------------------------------------*/
 /*Featue of full image show on click optional---------*/
 /* ===== Modal preview styles ===== */
 .modal {
