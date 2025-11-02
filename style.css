@@ -321,6 +321,7 @@ body {
   }
   .box-des {
    font-size: 25px;
+   font-weight: 600;
   }
 }
 /* Choose Section */
@@ -663,22 +664,30 @@ body {
   min-width: 100px;
   max-width: 550px;
 }
+/*Tablet View*/
+/*Contact Section*/
 @media (max-width: 1024px) {
   .contact-right-side {
    margin-top: 55px;
   }
+  .contact-button {
+   font-size: 29px;
+   width: 260px;
+   height: 45px;
+   margin-top: 10px;
+  }
 }
 /*Mobile View*/
-/*Choose Section*/
+/*Contact Section*/
 @media (max-width: 600px) {
   .contact {
    flex-direction: column;
    justify-content: center;
   }
   .contact-left-side {
-   width: 250%;
-   margin-right: auto;
-   margin-left: auto;
+   width: 340%;
+   margin-left: 700px;
+   text-align: center;
   }
   .contact-right-side {
    margin-top: 10px;
@@ -697,10 +706,17 @@ body {
   .contact-connect {
     font-size: 39px;
   }
+  .contact-button {
+   font-size: 35px;
+   width: 320px;
+   height: 65px;
+   margin-top: 10px;
+  }
   .contact-img {
   min-width: 100px;
-  max-width: 690px;
-  margin-left: 550px; /*We are here*/
+  max-width: 750px;
+  margin-left: 550px;
+  margin-top: 50px;
   }
 }  
 
