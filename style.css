@@ -27,7 +27,7 @@ body {
 .hero-right-side {
   display: block;
   flex: 1;
-  background-image: url("final.png"); /*Size 1550 by 1080*/
+  background-image: url("header img.png"); /*Size 1550 by 1080*/
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 75px;
@@ -271,7 +271,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   text-align: left;
-  box-shadow: 0px 1px 4px #000000; /*Box ahdow of services boxes*/
+  box-shadow: 0px 1px 4px #000000; /*Box sahdow of services boxes*/
 }
 .box-des {
   color: #222222;
@@ -320,7 +320,7 @@ body {
    text-align: center;
   }
   .box-des {
-   color: #000000; 
+   color: #000000; /*On mobile very light comming main problem--------------------*/ 
    font-size: 25px;
    font-weight: 600;
   }
@@ -486,9 +486,9 @@ body {
   border-radius: 15px;
   height: 170px;
 }
-#project-one-pic { /* Project 1 Pic*/
-  background-image: url("Projects/project1.png");
-  background-repeat: no-repeat;
+.project-box:hover { /*Project box animation effect*/
+  transform: translateY(2%);
+  transform: translateY(-2%);
 }
 .project-shade-box {
   display: block;
@@ -503,27 +503,53 @@ body {
 }
 .project-content-box {
   margin-left: 10px;
-  margin-top: -18px;
+  margin-top: -29px;
 }
 .project-box-heading {
-  display: inline;
+  display: block;
   font-family: "Saira", sans-serif;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
+  font-weight: 600;
 }
 .project-box-para {
-  display: inline;
+  display: block;
   font-family: "Saira", sans-serif;
   color: #ffffff;
-  font-size: 15px; 
-  line-height: 1.5px;
+  font-size: 15px;
+  margin-top: -10px; 
+}
+/*Projects Images*/
+#project-one-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d1.png");
+  background-repeat: no-repeat;
 }
 #project-two-pic { /*Project 2 Pic*/
-  background-image: url("Projects/project2.png");
+  background-image: url("Projects/desktop/d2.png");
   background-repeat: no-repeat;
-}/*We are here-------------------------------------------------------------------------------------------------------*/
+}
+#project-three-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d3.png");
+  background-repeat: no-repeat;
+}#project-four-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d4.png");
+  background-repeat: no-repeat;
+}#project-five-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d5.png");
+  background-repeat: no-repeat;
+}#project-six-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d6.png");
+  background-repeat: no-repeat;
+}
+#project-seven-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d7.png");
+  background-repeat: no-repeat;
+}
+#project-eight-pic { /* Project 1 Pic*/
+  background-image: url("Projects/desktop/d8.png");
+  background-repeat: no-repeat;
+}
+/*We are here-------------------------------------------------------------------------------------------------------*/
 /*Tablet View*/
 @media (max-width: 1024px) {
 
@@ -539,7 +565,7 @@ body {
    margin-left: 500px;
   }
   .project-box {
-   width: 890px; /*Your projects images sizes on mobile will 790px by 324px*/
+   width: 890px; 
    height: 324px;
   }
   .project-shade-box {
@@ -560,6 +586,39 @@ body {
  .project-box-para {
   font-size: 25px; 
   line-height: 34px;
+  }
+  /*Projects Images on mobile*/
+  #project-one-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m1.png");  /*Your projects images sizes on mobile will 790px by 324px not final-961 by 515*/
+  background-repeat: no-repeat;
+  }
+  #project-two-pic { /*Project 2 Pic*/
+  background-image: url("Projects/mobile/m2.png");
+  background-repeat: no-repeat;
+  }
+  #project-three-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m3.png");
+  background-repeat: no-repeat;
+  }
+  #project-four-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m4.png");
+  background-repeat: no-repeat;
+  }
+  #project-five-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m5.png");
+  background-repeat: no-repeat;
+  }
+  #project-six-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m6.png");
+  background-repeat: no-repeat;
+  }
+  #project-seven-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m7.png");
+  background-repeat: no-repeat;
+  }
+  #project-eight-pic { /* Project 1 Pic*/
+  background-image: url("Projects/mobile/m8.png");
+  background-repeat: no-repeat;
   }
 }
 /*We are here--------------------------------------------------------------------------------*/
