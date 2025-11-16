@@ -5,6 +5,9 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+html { /*For Button Links on page*/
+  scroll-behavior: smooth;
+}
 /*Hero Section*/
 .hero-section {
  display: flex;
