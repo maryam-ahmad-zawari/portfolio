@@ -521,39 +521,36 @@ body {
 }
 /*Projects Images*/
 #project-one-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d1.png");
+  background-image: url("projects/desktop/d1.png");
   background-repeat: no-repeat;
 }
 #project-two-pic { /*Project 2 Pic*/
-  background-image: url("Projects/desktop/d2.png");
+  background-image: url("projects/desktop/d2.png");
   background-repeat: no-repeat;
 }
 #project-three-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d3.png");
+  background-image: url("projects/desktop/d3.png");
   background-repeat: no-repeat;
 }#project-four-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d4.png");
+  background-image: url("projects/desktop/d4.png");
   background-repeat: no-repeat;
 }#project-five-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d5.png");
+  background-image: url("projects/desktop/d5.png");
   background-repeat: no-repeat;
 }#project-six-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d6.png");
+  background-image: url("projects/desktop/d6.png");
   background-repeat: no-repeat;
 }
 #project-seven-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d7.png");
+  background-image: url("projects/desktop/d7.png");
   background-repeat: no-repeat;
 }
 #project-eight-pic { /* Project 1 Pic*/
-  background-image: url("Projects/desktop/d8.png");
+  background-image: url("projects/desktop/d8.png");
   background-repeat: no-repeat;
 }
-/*We are here-------------------------------------------------------------------------------------------------------*/
-/*Tablet View*/
-@media (max-width: 1024px) {
 
-}
+/*Tablet View !Same As Desktop!*/
 /*Mobile View*/
 @media (max-width: 600px) {
   .projects {
@@ -589,35 +586,35 @@ body {
   }
   /*Projects Images on mobile*/
   #project-one-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m1.png");  /*Your projects images sizes on mobile will 790px by 324px not final-961 by 515*/
+  background-image: url("projects/mobile/m1.png");  /*Your projects images sizes on mobile will 790px by 324px not final-961 by 515*/
   background-repeat: no-repeat;
   }
   #project-two-pic { /*Project 2 Pic*/
-  background-image: url("Projects/mobile/m2.png");
+  background-image: url("projects/mobile/m2.png");
   background-repeat: no-repeat;
   }
   #project-three-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m3.png");
+  background-image: url("projects/mobile/m3.png");
   background-repeat: no-repeat;
   }
   #project-four-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m4.png");
+  background-image: url("projects/mobile/m4.png");
   background-repeat: no-repeat;
   }
   #project-five-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m5.png");
+  background-image: url("projects/mobile/m5.png");
   background-repeat: no-repeat;
   }
   #project-six-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m6.png");
+  background-image: url("projects/mobile/m6.png");
   background-repeat: no-repeat;
   }
   #project-seven-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m7.png");
+  background-image: url("projects/mobile/m7.png");
   background-repeat: no-repeat;
   }
   #project-eight-pic { /* Project 1 Pic*/
-  background-image: url("Projects/mobile/m8.png");
+  background-image: url("projects/mobile/m8.png");
   background-repeat: no-repeat;
   }
 }
