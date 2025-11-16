@@ -30,7 +30,7 @@ Hi, I'm **Maryam Ahmad Zawari**, a passionate WordPress developer with 3+ years 
 |---------|-------------|-------|
 | Customized WordPress Websites | Tailored websites built for your brand’s goals | ![Website](https://img.shields.io/badge/Website-Development-blue?style=for-the-badge) |
 | Responsive Design | Seamless layouts for all devices | ![Responsive](https://img.shields.io/badge/Responsive-Design-green?style=for-the-badge) |
-| E-commerce Store | Secure, scalable, and user-friendly online shops | ![E-commerce](https://img.shields.io/badge/E-commerce-Store-orange?style=for-the-badge) |
+| E-commerce Store | Secure, scalable, and user-friendly online shops | ![E-commerce](https://img.shields.io/badge/E-commerce-Store-ff69b4?style=for-the-badge) |
 | SEO Optimization | Boost search rankings and visibility | ![SEO](https://img.shields.io/badge/SEO-Optimized-red?style=for-the-badge) |
 | Website Maintenance | Regular updates, backups, and monitoring | ![Maintenance](https://img.shields.io/badge/Maintenance-Website-blueviolet?style=for-the-badge) |
 | Website Security | Advanced protection with malware scanning | ![Security](https://img.shields.io/badge/Security-Enhanced-darkgreen?style=for-the-badge) |
@@ -48,6 +48,6 @@ Hi, I'm **Maryam Ahmad Zawari**, a passionate WordPress developer with 3+ years 
 ---
 
 ## 📞 Contact Me
-- Email: [maryamahmadzawari@gmail.com]  
-- LinkedIn: [https://www.linkedin.com/in/maryam-ahmad5/]  
+- Email: maryamahmadzawari@gmail.com  
+- LinkedIn: https://www.linkedin.com/in/maryam-ahmad5/ 
 - Portfolio: [https://maryam-ahmad-zawari.github.io/portfolio/](https://maryam-ahmad-zawari.github.io/portfolio/)
