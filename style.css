@@ -165,7 +165,7 @@ html { /*For Button Links on page*/
   margin-top: 70px;
 }
 .about-pic-right {
-  display: right;
+  display: block;
   flex-grow: 1;
   margin-top: 150px;
 }
@@ -192,6 +192,11 @@ html { /*For Button Links on page*/
 .about-connect {
   color: rgb(13, 72, 112);
 }
+.about-img {
+  border-radius: 15px;
+  min-width: 450px;
+  max-width: 758px;
+}
 /*Tablet View Same as Dektop*/
 /*Mobile View*/
 /*Contact Section*/
@@ -210,6 +215,7 @@ html { /*For Button Links on page*/
   }
   .about-first {
    font-size: 37px;
+   text-align: center;
   }
   .about-second {
    font-size: 74px;
@@ -223,9 +229,9 @@ html { /*For Button Links on page*/
     font-size: 39px;
   }
   .about-img {
-  min-width: 100px;
+  min-width: 650px;
   max-width: 750px;
-  margin-left: 550px;
+  margin-left: 620px;
   margin-top: 50px;
   }
 }  
@@ -295,23 +301,24 @@ html { /*For Button Links on page*/
 /*Services List*/
 .services-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
   padding: 70px 65px;
   box-sizing: border-box;
   margin: -25px auto;
+  max-width: 1200px;
 }
-.services-box {
+.services-box { 
   background-color: #f2f2f2;
   border: 1px solid rgb(16, 118, 118); /* 2px d3d3d3*/
   border-radius: 6px;
-  padding:  20px 30px 10px 30px;
+  padding: 10px 20px;
   color: #0A254F;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
   text-align: left;
-  box-shadow: 0px 1px 4px #000000; /*Box sahdow of services boxes*/
+  box-shadow: 1px 1px 5px #000000; /*Box sahdow of services boxes*/
 }
 .box-des {
   color: #222222;
@@ -320,6 +327,9 @@ html { /*For Button Links on page*/
   font-weight: 100;
   line-height: 29.988px; 
   text-size-adjust: 100%;
+}
+.services-box:last-child {
+  grid-column: 2; /* place the last box in 3rd column */
 }
 /*Tablet View*/
 /*Services List*/
@@ -344,6 +354,9 @@ html { /*For Button Links on page*/
    height: 72px;
    margin-top: 15px;
   }
+  .services-box:last-child {
+  grid-column: 1; /* place the last box in 3rd column */
+  }
 }  
 /*Mobile View*/
 /*Services List*/
@@ -363,6 +376,9 @@ html { /*For Button Links on page*/
    color: #000000; /*On mobile very light comming main problem--------------------*/ 
    font-size: 25px;
    font-weight: 600;
+  }
+  .services-box:last-child {
+  grid-column: 1; /* place the last box in 3rd column */
   }
 }
 /* Choose Section */
