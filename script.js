@@ -1,4 +1,3 @@
-console.log("✅ JS file connected!");
 // --- Select all project boxes ---
 const projects = document.querySelectorAll(".project-box");
 // --- Modal elements ---
