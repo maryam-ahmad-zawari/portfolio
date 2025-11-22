@@ -941,11 +941,10 @@ html { /*For Button Links on page*/
 /*Tablet View Same As Desktop*/
 /*Mobile View*/
 @media (max-width: 600px) {
-
   .footer {
     width: 100%;
     height: auto;
-    padding: 40px 0;
+    padding-bottom: 40px;
     margin-top: 130px;
   }
 
@@ -956,73 +955,63 @@ html { /*For Button Links on page*/
     width: 100%;
   }
 
-  /* Footer Column 1 */
+  /* Footer 1st Column */
   .content-part {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .footer-img {
-    width: 180px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 0 auto;
-    display: block;
+    margin-left: 0;
   }
 
   .content-name {
-    font-size: 26px;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 32px;
+    margin-left: 0;
   }
 
   .content-para {
-    font-size: 16px;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0;
   }
 
   .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    margin-left: 0;
   }
 
-  /* Quick Links */
+  /* Quick links */
   .quick-links {
-    margin: 0;
-    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .links-first {
-    font-size: 22px;
-  }
-
-  .links-list {
-    padding: 0;
-  }
-
-  .links-list li {
-    margin: 8px 0;
+    font-size: 28px;
   }
 
   .link-path {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   /* Newsletter */
   .newsletter {
-    margin: 0;
-    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .news-btn {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 12px 20px;
   }
 
   /* Copyright */
   .copyright {
-    font-size: 16px;
-    margin-top: 20px;
     text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
   }
 }
+
