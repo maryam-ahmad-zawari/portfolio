@@ -379,7 +379,7 @@ html { /*For Button Links on page*/
 @media (max-width: 600px) {
   .services-list {
    grid-template-columns: repeat(2, 1fr);
-   gap: 20px;
+   gap: 15px;
    margin: -290px 0px 0px 0px;
   }
   .services-box {
@@ -387,7 +387,6 @@ html { /*For Button Links on page*/
    height: 390px;
    font-size: 34px;
    text-align: center;
-   margin-left: 40px;
   }
   
   .box-des {
@@ -517,18 +516,16 @@ html { /*For Button Links on page*/
    line-height: 79px;
   }
   .choose-para {
-   font-size: 39px;
+   font-size: 32px;
    margin-top: -37px;
-   width: 1000px;
    margin-bottom: 70px;
-   margin-left: -20px;
+   margin-left: 20px;
   }
   .choose-first-third-para, .choose-second-para {
    width: 990px;
    height: 240px;
    font-size: 35px;
    margin: 10px auto;
-   margin-left: -10px;
   }
 }
 /* Projects Section */
@@ -645,7 +642,7 @@ html { /*For Button Links on page*/
   .project-box {
    width: 890px; 
    height: 324px;
-   margin-left: 57px;
+   margin-left: 23px;
   }
   .project-shade-box {
   margin-top: 210px;
