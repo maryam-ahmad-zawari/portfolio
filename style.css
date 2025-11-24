@@ -215,7 +215,7 @@ html { /*For Button Links on page*/
 }
 /*Tablet View Same as Dektop*/
 /*Mobile View*/
-/*Contact Section*/
+/*About Section*/
 @media (max-width: 600px) {
   .about {
    flex-direction: column;
