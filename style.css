@@ -489,45 +489,7 @@ html { /*For Button Links on page*/
    height: 140px;
   }
 }
-/*Mobile View*/
-/*Choose Section*/
-@media (max-width: 600px) {
-  .section-choose {
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-  }
-  .choose-left {
-   width: 960px;
-   text-align: center;
-   margin-left: 32px;
-  }
-  .choose-right {
-   width: 250%;
-   text-align: center;
-   margin-top: -90px;
-  }
-  .choose-first {
-   font-size: 37px;
-   text-align: center;
-  }
-  .choose-second {
-   font-size: 74px;
-   line-height: 79px;
-  }
-  .choose-para {
-   font-size: 32px;
-   margin-top: -37px;
-   margin-bottom: 70px;
-   margin-left: 20px;
-  }
-  .choose-first-third-para, .choose-second-para {
-   width: 990px;
-   height: 240px;
-   font-size: 35px;
-   margin: 10px auto;
-  }
-}
+/*-----------------------------------*/
 /* Projects Section */
   .projects-first { /*Separte reason for top margin on mobile*/
    color: rgb(16, 118, 118);
