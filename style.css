@@ -300,7 +300,7 @@ html { /*For Button Links on page*/
    width: 970px;
    height: 1240px;
   }
-  .services-content {
+  .services-content { 
    width: 100%;
   }
   .services-first {
@@ -498,12 +498,12 @@ html { /*For Button Links on page*/
    text-align: center;
   }
   .choose-left {
-   width: 970px; /*was 960*/
+   width: 960px; /*was 960*/
    text-align: center;
    margin-left: 32px;
   }
   .choose-right {
-   width: 250%;
+   width: 960px;
    text-align: center;
    margin-top: -90px;
   }
@@ -519,10 +519,10 @@ html { /*For Button Links on page*/
    font-size: 32px;
    margin-top: -37px;
    margin-bottom: 70px;
-   margin-left: 20px;
+   margin-left:
   }
   .choose-first-third-para, .choose-second-para {
-   width: 990px;
+   width: 960px;
    height: 240px;
    font-size: 35px;
    margin: 10px auto;
