@@ -22,7 +22,7 @@ html { /*For Button Links on page*/
 }
 @media (max-width: 600px) {
   .top-bar {
-    width: 1070px;
+    width: 1105px;
     height: 70px;
   }
   .top-icon {
@@ -120,7 +120,7 @@ html { /*For Button Links on page*/
   .hero-section {
    flex-direction: column;
    gap: 10px;
-   width: 1070px;
+   width: 1105px;
    height: 1350px;
   }
   .hero-left-side{
@@ -240,6 +240,7 @@ html { /*For Button Links on page*/
   .about-para {
    font-size: 39px;
    margin-top: -57px;
+   width: 970px;
   }
   .about-connect {
     font-size: 39px;
@@ -379,8 +380,8 @@ html { /*For Button Links on page*/
 @media (max-width: 600px) {
   .services-list {
    grid-template-columns: repeat(2, 1fr);
-   gap: 15px;
-   margin: -290px auto 0px 0px;
+   gap: 25px;
+   margin: -290px auto 0px 40px; /*40px added*/
   }
   .services-box {
    width: 390px;
@@ -508,7 +509,7 @@ html { /*For Button Links on page*/
    margin-top: -90px;
   }
   .choose-first {
-   font-size: 37px;
+   font-size: 38px;
    text-align: center;
   }
   .choose-second {
@@ -516,12 +517,13 @@ html { /*For Button Links on page*/
    line-height: 79px;
   }
   .choose-para {
-   font-size: 32px;
+   font-size: 35px;
+   width: 960px;
    margin-top: -37px;
    margin-bottom: 70px;
   }
   .choose-first-third-para, .choose-second-para {
-   width: 960px;
+   width: 990px;
    height: 240px;
    font-size: 35px;
    margin: 10px auto;
@@ -636,7 +638,7 @@ html { /*For Button Links on page*/
    justify-content: center;
    gap: 35px;
    margin-top: -500px;
-   margin-left: 500px;
+   margin-left: 525px;
   }
   .project-box {
    width: 890px; 
