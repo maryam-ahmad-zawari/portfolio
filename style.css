@@ -22,7 +22,7 @@ html { /*For Button Links on page*/
 }
 @media (max-width: 600px) {
   .top-bar {
-    width: 1105px;
+    width: 1070px;
     height: 70px;
   }
   .top-icon {
@@ -120,7 +120,7 @@ html { /*For Button Links on page*/
   .hero-section {
    flex-direction: column;
    gap: 10px;
-   width: 1105px;
+   width: 1070px;
    height: 1350px;
   }
   .hero-left-side{
@@ -1029,7 +1029,7 @@ html { /*For Button Links on page*/
 @media (max-width: 600px) {
 .footer {
   display: grid;
-  width: 1105px;
+  width: 1070px;
   height:auto;
   margin-top: 100px;
 }
