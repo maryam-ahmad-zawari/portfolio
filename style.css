@@ -5,6 +5,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 }
 html { /* For Button Links on page */
   scroll-behavior: smooth;
@@ -72,7 +73,7 @@ html { /* For Button Links on page */
   margin: 20px 0;
 }
 
-#hero-heading {
+.hero-heading {
   color: #23A455;
 }
 
@@ -220,7 +221,7 @@ html { /* For Button Links on page */
   max-width: 758px;   
   height: auto;       
 }
-#about-heading {
+.about-heading {
   color: #ffffff;
 }
 
@@ -301,24 +302,25 @@ html { /* For Button Links on page */
   text-align: center;
   width: 70%;
   margin-top: 90px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 }
 .services-first {
-  color: rgb(16, 118, 118);
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
+  color: #adffcd;
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .services-second {
-  color: #0A254F;
-  font-family: Roboto, sans-serif;
-  font-size: 47px;
+  color: #23a455;
+  font-size: 50px;
   margin-top: -10px;
+  line-height: 1.2;
+  letter-spacing: 3px;
 }
 .services-para {
-  color: rgb(0, 0, 0);
-  font-family: Roboto, sans-serif;
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-top: -30px;
 }
 /* Mobile View */
@@ -355,20 +357,18 @@ html { /* For Button Links on page */
   max-width: 1200px;
 }
 .services-box { 
-  background-color: #f2f2f2;
-  border: 1px solid rgb(16, 118, 118);
+  background-color: #000;
+  border: 1px solid #adffcd;
   border-radius: 6px;
   padding: 20px;           
-  color: #0A254F;
-  font-family: "DM Sans", sans-serif;
+  color: #23a455;
   font-size: 22px;
   font-weight: 700;
   text-align: left;
   box-shadow: 1px 1px 3px #000000;
 }
 .box-des {
-  color: #222222;
-  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 100;
   line-height: 1.6;       
@@ -376,6 +376,11 @@ html { /* For Button Links on page */
 .services-box:last-child {
   grid-column: 2;      
 }
+.services-box-icon {
+  height: 60px;
+  width: 60px;
+}
+
 @media (max-width: 1024px) {
     .services-list {
     grid-template-columns: repeat(2, 1fr); 
