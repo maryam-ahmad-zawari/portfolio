@@ -414,6 +414,7 @@ html { /* For Button Links on page */
     line-height: 1.4;
   }
 }
+
 /* Choose Section */
 .section-choose {
   display: flex;
@@ -423,69 +424,101 @@ html { /* For Button Links on page */
   padding: 30px 45px;
   margin: 90px auto 0 auto;
   width: 100%;
-  max-width: 1200px;
-  gap: 80px;
+  gap: 30px;
   box-sizing: border-box;
 }
 .choose-left {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 15px;
+  max-width: 700px;
+  margin-left: 10px;
+  margin-top: 0;
 }
 .choose-right {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 15px;
-  margin-right: 0;
+  max-width: 600px;
+  margin-top: 0;
 }
 .choose-first {
-  color: rgb(16, 118, 118);
-  font-family: "Saira", sans-serif;
-  font-size: 20px;
+  color: #adffcd;
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .choose-second {
-  color: #0A254F;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #23a455;
   font-size: 47px;
   font-weight: 700;
-  line-height: 1.2; 
+  line-height: 1.2;
+  letter-spacing: 3px; 
   margin-top: -10px;
 }
 .choose-para {
-  color: rgb(0, 0, 0);
-  font-family: "Saira", sans-serif;
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
   padding-right: 0; 
   margin-top: -10px;
 }
+.choose-button {
+  font-size: 16px;
+  background-color: #23A455;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  height: 35px;
+  width: 180px;
+  margin-top: 20px;
+}
+.choose-button:hover {
+  background-color: #adffcd;
+  color: #000;
+  border: 2px solid #23A455;
+  transform: translateY(-5px); 
+  transition: 0.3s;
+}
 .choose-first-third-para {
-  background-color: #eeeeee;
   display: inline-block;
   padding: 10px 15px;
   border-radius: 10px;
-  border: 1px solid rgb(16, 118, 118);
-  box-shadow: 0 1px 2px #0A254F;
-  font-family: "Saira", sans-serif;
+  border: 1px solid #adffcd;
   margin-right: 0; 
-  margin-bottom: 10px; 
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #adffcd; 
 }
 .choose-second-para {
-  background-color: rgb(16, 118, 118);
+  background-color: #23a455;
   display: block;
   padding: 10px 15px;
   border-radius: 10px;
-  border: 1px solid rgb(0, 0, 0);
-  color: #ffffff;
-  font-family: "Saira", sans-serif;
-  margin-left: 50px; /* Design slightly push to the right */
-  margin-bottom: 10px;
-  box-shadow: 0 1px 2px #0A254F;
+  border: 1px solid #ffffff;
+  margin-left: 0; 
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #adffcd;
 }
+/*First-Second-Thrid Box Styling*/
+/*First & Third Box*/
+.choose-box-heading {
+  color: #23a455
+}
+.choose-box-para {
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
+/*Second Box*/
+.choose-second-box-heading {
+  color: #ffffff;
+}
+.choose-second-box-para {
+  color: #000;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
+
 /* Tablet View */
 @media (max-width: 1024px) {
   .section-choose {
@@ -494,10 +527,13 @@ html { /* For Button Links on page */
     gap: 40px;               
     align-items: flex-start;
   }
-  .choose-left,
-  .choose-right {
+  .choose-left {
     flex: 1;
     margin-top: 0;
+  }
+  .choose-right {
+    flex: 1;
+    margin-top: -25px;
   }
   .choose-first {
     font-size: 18px;          
@@ -513,44 +549,61 @@ html { /* For Button Links on page */
   }
   .choose-first-third-para {
     margin-right: 0;          
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: inline-block;
   }
   .choose-second-para {
     margin-left: 30px;         /* Design slightly right on tablet */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
+
 /* Mobile View */
 @media (max-width: 600px) {
   .section-choose {
-    flex-direction: column; 
-    padding: 20px 15px;
+    flex-direction: column;
+    padding: 20px;
     gap: 20px;
-    text-align: center;
   }
+
   .choose-left,
   .choose-right {
-    width: 100%;
-    margin-top: 0;
+    max-width: 100%;
+    margin: 0;
   }
-  .choose-first {
-    font-size: 16px;
-  }
+
   .choose-second {
     font-size: 28px;
-    line-height: 1.2;
+    letter-spacing: 1;
   }
+
   .choose-para {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.7;
   }
+
   .choose-first-third-para,
   .choose-second-para {
-    margin: 0 auto 10px auto; 
-    display: inline-block;
-    width: auto;
+    margin: 0 0 20px 0;
+    display: block;
   }
+
+  .choose-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /*First & Third Box*/
+  .choose-box-para {
+    line-height: 1.2;
+    letter-spacing: 0;
 }
+  /*Second*/
+  .choose-second-box-para {
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+}
+
 /* Projects Section - Main Heading */
 .projects-first {  /*Separte reason for top margin on mobile*/
   color: rgb(16, 118, 118);
