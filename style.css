@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #000;
 }
 html { /* For Button Links on page */
   scroll-behavior: smooth;
@@ -94,7 +95,9 @@ html { /* For Button Links on page */
 }
 
 .work-button:hover { 
-  background-color: #2ac4c4;
+  background-color: #adffcd;
+  color: #000;
+  border: 2px solid #23A455;
   transform: translateY(-5px); 
   transition: 0.3s;
 }
@@ -166,7 +169,8 @@ html { /* For Button Links on page */
 .about {
   display: flex;
   justify-content: space-between; 
-  align-items: center;                      
+  align-items: center;  
+  max-width: 1300px; /*Control width for styling purpose*/
   margin: 0 auto;                 
   padding: 130px 60px;            
   box-sizing: border-box;
@@ -176,7 +180,6 @@ html { /* For Button Links on page */
 .about-content-left {
   flex: 1;
   display: block;
-  
 }
 .about-pic-right {
   flex: 1;
@@ -269,12 +272,13 @@ html { /* For Button Links on page */
   position: absolute;
   right: -880px;
   top: -200px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-image: url("about-background-img.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 /*Mobile Visibility Hidden*/
 @media (max-width: 600px) {
   .design-wrapper {
