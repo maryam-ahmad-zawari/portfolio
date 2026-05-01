@@ -161,22 +161,22 @@ html { /* For Button Links on page */
     max-width: 250px;
   }
 }
-/*=============================*/
+
 /* About Section */ 
-.about { 
+.about {
   display: flex;
   justify-content: space-between; 
-  align-items: center;            
-  max-width: 1200px;               
+  align-items: center;                      
   margin: 0 auto;                 
-  padding: 30px 60px;            
+  padding: 130px 60px;            
   box-sizing: border-box;
   gap: 40px; 
+  background-color: #000;
 }
 .about-content-left {
   flex: 1;
   display: block;
-  margin-top: 0; 
+  
 }
 .about-pic-right {
   flex: 1;
@@ -185,27 +185,31 @@ html { /* For Button Links on page */
   text-align: center; 
 }
 .about-first {
-  color: rgb(16, 118, 118);
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
+  color: #adffcd;
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .about-second {
-  color: #0A254F;
-  font-family: Roboto, sans-serif;
-  font-size: 47px;
+  color: #23a455;
+  font-size: 50px;
   margin: 10px 0;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .about-para {
-  color: rgb(0, 0, 0);
-  font-family: Roboto, sans-serif;
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
   margin-top: 10px;
-  padding-right: 0; 
+  padding-right: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
 }
 .about-connect {
-  color: rgb(13, 72, 112);
+  color: #adffcd;
 }
 .about-img {
   border-radius: 15px;
@@ -213,20 +217,24 @@ html { /* For Button Links on page */
   max-width: 758px;   
   height: auto;       
 }
+#about-heading {
+  color: #ffffff;
+}
+
 /* Mobile View */
 @media (max-width: 600px) {
   .about {
     flex-direction: column;  
     padding: 15px 20px;      
     text-align: center;       
-    gap: 20px;               
+    gap: 10px;               
   }
   .about-content-left {
     margin-top: 20px;       
     width: 100%;             
   }
   .about-pic-right {
-    margin-top: 20px;         
+    margin-top: 0;         
     width: 100%;             
     text-align: center;
   }
@@ -246,8 +254,31 @@ html { /* For Button Links on page */
   .about-img {
     max-width: 90%;          
     height: auto;
-    margin-top: 15px;
+    margin-top: 0;
     border-radius: 15px;
+  }
+}
+
+/*Design Box*/
+.design-wrapper {
+  position: relative;
+  height: 0; /* prevents extra space */
+}
+
+.design-box-img {
+  position: absolute;
+  right: -880px;
+  top: -200px;
+  width: 300px;
+  height: 300px;
+  background-image: url("about-background-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*Mobile Visibility Hidden*/
+@media (max-width: 600px) {
+  .design-wrapper {
+    display: none;
   }
 }
 /* Services Section */
@@ -257,7 +288,7 @@ html { /* For Button Links on page */
   align-items: center;
   flex-direction: column; 
   height: auto;
-  margin: 0 auto;          
+  margin: 0 auto;         
   padding: 40px 60px;      
   box-sizing: border-box;
 }
