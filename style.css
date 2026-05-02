@@ -606,8 +606,7 @@ html { /* For Button Links on page */
 
 /* Projects Section - Main Heading */
 .projects-first {  /*Separte reason for top margin on mobile*/
-  color: rgb(16, 118, 118);
-  font-family: Roboto, sans-serif;
+  color: #adffcd;
   font-size: 20px;
   font-weight: 700;
   margin-top: 0; 
@@ -632,7 +631,7 @@ html { /* For Button Links on page */
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columns on desktop */
-  gap: 25px;
+  gap: 35px;
   padding: 20px;
   margin: 0 auto; 
   max-width: 1200px; 
@@ -641,19 +640,22 @@ html { /* For Button Links on page */
 .project-box {
   display: block;
   padding: 160px 20px; 
-  background-color: #ffffff;
-  border: 6px solid rgb(16, 118, 118);
-  border-radius: 15px;
+  background-color: #000;
+  border: 1px solid #adffcd;
+  border-radius: 10px;
   height: 170px;
   box-sizing: border-box;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 8px #adffcd;
+  margin-top: 10px;
 }
 .project-box:hover {
   transform: translateY(-2%); 
 }
 .project-shade-box {
   display: block;
-  background-color: #0A254F;
+  background-color: #000;
+  border: 2px solid #adffcd;
   text-align: left;
   margin-top: 40px; 
   margin-left: -20px;     
@@ -670,17 +672,16 @@ html { /* For Button Links on page */
 }
 .project-box-heading {
   display: block;
-  font-family: "Saira", sans-serif;
-  color: #ffffff;
+  color: #23a455;
   font-size: 20px;
   font-weight: 600;
 }
 .project-box-para {
   display: block;
-  font-family: "Saira", sans-serif;
   color: #ffffff;
   font-size: 15px;
-  margin-top: 5px;  
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 /*Project section images on desktop */
 #project-one-pic { /* Project 1 Pic*/
@@ -732,14 +733,14 @@ html { /* For Button Links on page */
   }
   .project-box {
     width: 100%;      
-    height: 70px;     
+    height: 210px;     
     padding: 96px 5px;
   }
   .project-shade-box {
     width: 90%;      
     margin-top: 0px;  
     margin-left: -5px; 
-    height: 96px;
+    height: 113px;
     padding: 5px;
     border-radius: 5px;
   }
@@ -748,7 +749,7 @@ html { /* For Button Links on page */
     margin-top: 10px;
   }
   .project-box-heading {
-    font-size: 12px;  
+    font-size: 15px;  
   }
   .project-box-para {
     font-size: 12px; 
@@ -822,9 +823,10 @@ html { /* For Button Links on page */
   justify-content: space-between;
   align-items: flex-start; 
   margin: 90px auto 0 auto;
-  padding: 40px 60px;
-  max-width: 1200px;
+  padding: 50px 60px;
   box-sizing: border-box;
+  margin-bottom: 30px;
+  gap: 70px;
 }
 .contact-left-side {
   flex: 1;
@@ -835,89 +837,81 @@ html { /* For Button Links on page */
   display: block;
 }
 .contact-first {
-  color: rgb(16, 118, 118);
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
+  color: #adffcd;
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .contact-second {
-  color: #0A254F;
-  font-family: Roboto, sans-serif;
+  color: #23a455;
   font-size: 47px;
   margin-top: -1px;
+  line-height: 1.2;
+  letter-spacing: 3px;
 }
 .contact-para {
-  color: rgb(0, 0, 0);
-  font-family: Roboto, sans-serif;
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
   padding-right: 0; 
   margin-top: -10px;
 }
 .contact-connect {
-  color: rgb(13, 72, 112);
+  color: #adffcd;
 }
 .contact-button {
-  font-family: sans-serif;
   font-size: 17px;
-  background-color: #0A254F;
+  background-color: #23a455;
   color: #ffffff;
   width: 150px;
   height: 35px;
-  border: 2px solid rgb(16, 118, 118);
-  border-radius: 6px;
+  border: 2px solid #adffcd;
+  border-radius: 4px;
   margin-top: 10px;
   transition: all 0.3s ease;
 }
 .contact-button:hover {
-  background-color: #209797;
-  color: #ffffff;
-  border: 2px solid #0A254F;
+  background-color: #adffcd;
+  color: #000;
+  border: 2px solid #23a455;
   transform: translateY(-5px);
 }
 .contact-img {
-  width: 100%;             
-  max-width: 600px;      
+  width: 100%;
+  max-width: 700px;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-/* Mobile View */
+
 @media (max-width: 600px) {
   .contact {
-    flex-direction: column;    
-    padding: 20px 15px;
-    text-align: center;
+    flex-direction: column;
+    padding: 20px;
     gap: 20px;
   }
+
   .contact-left-side,
   .contact-right-side {
     width: 100%;
-    margin-top: 0;
   }
-  .contact-first {
-    font-size: 16px;
+
+  .contact-img {
+    max-width: 100%;
+    height: auto;
   }
+
   .contact-second {
     font-size: 28px;
+    letter-spacing: 1px;
   }
+
   .contact-para {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  .contact-button {
-    width: 180px;       
-    height: 40px;
-    font-size: 16px;
-  }
-  .contact-img {
-    width: 100%;        
-    max-width: 500px;   
-    height: auto;
-    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 0;
   }
 }
+
 /*Foter Section*/
 .footer {
   background-color: #209797;
