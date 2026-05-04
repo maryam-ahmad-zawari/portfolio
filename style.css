@@ -41,16 +41,16 @@ html { /* For Button Links on page */
 .hero-left-side {
   flex: 1;
   display: block;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .hero-right-side {
   flex: 1;
   width: 100%;             
-  max-width: 1200px;       
-  height: 500px;                   
-  background-image: url("header img.png");
-  background-size: contain;  
+  max-width: 1400px;       
+  height: 510px;                   
+  background-image: url("header-img.png");
+  background-size: cover;  
   background-repeat: no-repeat; 
   background-position: center;
 }
@@ -103,39 +103,45 @@ html { /* For Button Links on page */
   transition: 0.3s;
 }
 
-/* TABLET (<= 992px) */
-@media (max-width: 992px) {
+/* TABLET */
+@media (max-width: 1024px) {
   .hero-section {
-    padding: 80px 40px;
+    padding: 35px 30px  0 30px;
     gap: 30px;
   }
-
+  .hero-left-side {
+    margin-top: 20px;
+  }
+  .hero-right-side {
+    height: 300px;
+    max-width: 100%;
+    background-size: cover;
+  }
   #second {
-    font-size: 38px;
+    font-size: 40px;
+    letter-spacing: 2px;
   }
 
   #para {
     font-size: 16px;
   }
-
-  .hero-right-side {
-    height: 350px;
-  }
+  .work-button {
+    padding: 9px 14px;
+    font-size: 15px;
 }
-/* MOBILE (<= 600px) */
+}
+/* MOBILE */
 @media (max-width: 600px) {
   .hero-section {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;   
     padding: 60px 20px;
     text-align: center;
     gap: 20px;
     background-image: url("background-img-mobile.png");
   }
-
   .hero-left-side {
     margin-top: 0;
   }
-
   .hero-right-side {
     height: 500px;
     width: 100%;
@@ -145,21 +151,17 @@ html { /* For Button Links on page */
     background-position: center;   /* add this */
     background-repeat: no-repeat;  /* add this */
   }
-
   #second {
     font-size: 28px;
     letter-spacing: 1px;
   }
-
   #first {
     font-size: 14px;
   }
-
   #para {
     font-size: 15px;
     line-height: 1.6;
   }
-
   .work-button {
     width: 100%;
     max-width: 250px;
@@ -225,6 +227,39 @@ html { /* For Button Links on page */
   color: #ffffff;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .about {
+    display: flex;
+    flex-direction: row;      
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 40px;
+  }
+  .about-content-left,
+  .about-pic-right {
+    flex: 1;
+    width: 50%;
+  }
+  .about-second {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .about-para {
+    font-size: 16px;
+  }
+  .about-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  .about-pic-right {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
 /* Mobile View */
 @media (max-width: 600px) {
   .about {
@@ -263,29 +298,36 @@ html { /* For Button Links on page */
   }
 }
 
-/*Design Box*/
+/*Design Box 1 Before Services Section*/
 .design-wrapper {
   position: relative;
   height: 0; /* prevents extra space */
 }
-
 .design-box-img {
   position: absolute;
-  right: -880px;
+  left: 940px;
   top: -200px;
   width: 400px;
   height: 400px;
-  background-image: url("about-background-img.png");
+  border-radius: 170px;
+  background-image: url("about-design-img.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-/*Mobile Visibility Hidden*/
+/*Mobile Visibility & Tablet Hidden*/
+@media (max-width: 1024px) {
+  .design-wrapper {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .design-wrapper {
     display: none;
   }
 }
+
 /* Services Section */
 .services {
   display: flex;
@@ -323,6 +365,28 @@ html { /* For Button Links on page */
   line-height: 1.7;
   margin-top: -30px;
 }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .services {
+    padding: 60px 40px;
+  }
+  .services-content {
+    width: 85%;       
+    margin-top: 60px;
+  }
+  .services-second {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+  .services-para {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: -20px;
+  }
+}
+
 /* Mobile View */
 @media (max-width: 600px) {
   .services {
@@ -398,6 +462,7 @@ html { /* For Button Links on page */
   grid-column: 1;
   }
 }
+
 /* Mobile View */
 @media (max-width: 600px) {
   .services-list {
@@ -412,6 +477,35 @@ html { /* For Button Links on page */
   .box-des {
     font-size: 16px;             
     line-height: 1.4;
+  }
+}
+
+/* Design Box 2 Before Choose Section*/
+.design-wrapper-2 {
+  position: relative;
+  height: 0; 
+}
+.design-box-img-2 {
+  position: absolute;
+  top: -350px;
+  width: 400px;
+  height: 400px;
+  
+  background-image: url("services-design-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Mobile & Tablet  Visibility Hidden*/
+@media (max-width: 1024px) {
+  .design-wrapper-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .design-wrapper-2 {
+    display: none;
   }
 }
 
@@ -822,7 +916,7 @@ html { /* For Button Links on page */
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
-  margin: 90px auto 0 auto;
+  margin: 120px auto 0 auto;
   padding: 50px 60px;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -883,6 +977,35 @@ html { /* For Button Links on page */
   display: block;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .contact {
+    display: flex;
+    flex-direction: row;      
+    justify-content: space-between;
+    align-items: center;      
+    gap: 40px;
+    padding: 40px 30px;
+  }
+  .contact-left-side,
+  .contact-right-side {
+    flex: 1;
+    width: 50%;               
+  }
+  .contact-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .contact-second {
+    font-size: 38px;
+  }
+  .contact-para {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 600px) {
   .contact {
     flex-direction: column;
@@ -914,9 +1037,10 @@ html { /* For Button Links on page */
 
 /*Foter Section*/
 .footer {
-  background-color: #209797;
+  background-color: #23a455;
   padding: 40px 20px; 
   box-sizing: border-box;
+  margin-top: 90px;
 }
 .footer-section {
   display: grid;
@@ -938,18 +1062,16 @@ html { /* For Button Links on page */
   margin-left: 0; 
 }
 .content-name {
-  font-family: Roboto, sans-serif;
   font-size: 27px;
-  color: #0A254F;
+  color: #000;
   margin-top: 5px;
 }
 .content-para {
-  font-family: Roboto, sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #000;
   line-height: 1.7;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 /* Footer 2nd Column Links */
 .quick-links {
@@ -957,9 +1079,8 @@ html { /* For Button Links on page */
   margin-left: 0;
 }
 .links-first {
-  font-family: Roboto, sans-serif;
   font-size: 20px;
-  color: #0A254F;
+  color: #000;
 }
 .links-list {
   list-style: none;
@@ -970,44 +1091,39 @@ html { /* For Button Links on page */
 }
 .link-path {
   text-decoration: none;
-  color: white;
-  font-family: Roboto, sans-serif;
+  color: #ffffff;
   font-size: 17px;
 }
 .link-path:hover {
-  color: #0A254F;
+  color: #000;
 }
 /* Footer 3rd Column Newsletter */
 .newsletter {
   margin-top: 20px;
 }
-#news-para {
-  margin-top: 5px;
-}
 .news-btn {
-  background-color: #0A254F;
+  background-color: #000;
   color: #ffffff;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
-  padding: 5px 15px;
-  border: 1px solid #ffffff;
+  padding: 8px 25px;
+  border: 3px solid #adffcd;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 .news-btn:hover {
-  background-color: rgb(16, 118, 118);
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: #adffcd;
+  color: #000;
+  border: 2px solid #000;
   transform: translateY(-5px); 
 }
 .copyright {
   text-align: center;
   color: #ffffff;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   margin-top: 30px;
 }
-/* Mobile View */
+
+/* Mobile View*/ 
 @media (max-width: 600px) {
   .footer-section {
     grid-template-columns: 1fr;  
